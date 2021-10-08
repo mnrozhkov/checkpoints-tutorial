@@ -6,9 +6,10 @@ import torch
 import torch.nn.functional as F
 import torchvision
 
+import dvclive
 from dvclive import Live 
-
 dvclive = Live()
+
 EPOCHS = 10
 
 
