@@ -6,7 +6,9 @@ import torch
 import torch.nn.functional as F
 import torchvision
 
+from dvclive import Live 
 
+dvclive = Live()
 EPOCHS = 10
 
 
@@ -113,6 +115,8 @@ def main():
             metrics = evaluate(model, x_test, y_test)
             for k, v in metrics.items():
                 print('Epoch %s: %s=%s'%(i, k, v))
+                dvclive.log(name=k, val=v)
+            dvclive.next_step()
     except KeyboardInterrupt:
         pass
 
