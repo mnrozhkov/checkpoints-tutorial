@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="5">
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+</head>
+<body>
+    <table>
+<thead>
+<tr><th>dvclive.json                                                     </th></tr>
+</thead>
+<tbody>
+<tr><td>{&#x27;data&#x27;: {&#x27;step&#x27;: 23, &#x27;loss&#x27;: 0.1306035816669464, &#x27;acc&#x27;: 0.9635}}</td></tr>
+</tbody>
+</table>
+<br>
+
+    <div id = "plot_dvclive_acc_tsv">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "acc": "0.9259",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1633693566859"
+    },
+    {
+        "acc": "0.9297",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1633693575963"
+    },
+    {
+        "acc": "0.9341",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1633693585216"
+    },
+    {
+        "acc": "0.9352",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1633693594743"
+    },
+    {
+        "acc": "0.9391",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1633693604427"
+    },
+    {
+        "acc": "0.9422",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1633693613801"
+    },
+    {
+        "acc": "0.9457",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1633693623094"
+    },
+    {
+        "acc": "0.9466",
+        "rev": "workspace",
+        "step": "7",
+        "timestamp": "1633693632493"
+    },
+    {
+        "acc": "0.9494",
+        "rev": "workspace",
+        "step": "8",
+        "timestamp": "1633693642056"
+    },
+    {
+        "acc": "0.9528",
+        "rev": "workspace",
+        "step": "9",
+        "timestamp": "1633693651405"
+    },
+    {
+        "acc": "0.9538",
+        "rev": "workspace",
+        "step": "10",
+        "timestamp": "1633700112847"
+    },
+    {
+        "acc": "0.9568",
+        "rev": "workspace",
+        "step": "11",
+        "timestamp": "1633700124049"
+    },
+    {
+        "acc": "0.9586",
+        "rev": "workspace",
+        "step": "12",
+        "timestamp": "1633700135672"
+    },
+    {
+        "acc": "0.9595",
+        "rev": "workspace",
+        "step": "13",
+        "timestamp": "1633700147697"
+    },
+    {
+        "acc": "0.9617",
+        "rev": "workspace",
+        "step": "14",
+        "timestamp": "1633700492297"
+    },
+    {
+        "acc": "0.9617",
+        "rev": "workspace",
+        "step": "15",
+        "timestamp": "1633700504255"
+    },
+    {
+        "acc": "0.9618",
+        "rev": "workspace",
+        "step": "16",
+        "timestamp": "1633700516066"
+    },
+    {
+        "acc": "0.9619",
+        "rev": "workspace",
+        "step": "17",
+        "timestamp": "1633700527589"
+    },
+    {
+        "acc": "0.9612",
+        "rev": "workspace",
+        "step": "18",
+        "timestamp": "1633700539586"
+    },
+    {
+        "acc": "0.9621",
+        "rev": "workspace",
+        "step": "19",
+        "timestamp": "1633700551181"
+    },
+    {
+        "acc": "0.9625",
+        "rev": "workspace",
+        "step": "20",
+        "timestamp": "1633700562846"
+    },
+    {
+        "acc": "0.9625",
+        "rev": "workspace",
+        "step": "21",
+        "timestamp": "1633700574381"
+    },
+    {
+        "acc": "0.9624",
+        "rev": "workspace",
+        "step": "22",
+        "timestamp": "1633700586358"
+    },
+    {
+        "acc": "0.9635",
+        "rev": "workspace",
+        "step": "23",
+        "timestamp": "1633700598010"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "acc",
+            "type": "quantitative",
+            "title": "acc",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+            vegaEmbed('#plot_dvclive_acc_tsv', spec);
+        </script>
+    </div>
+    
+
+    <div id = "plot_dvclive_loss_tsv">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "loss": "0.25498995184898376",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1633693566858"
+    },
+    {
+        "loss": "0.24339960515499115",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1633693575962"
+    },
+    {
+        "loss": "0.2299031913280487",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1633693585215"
+    },
+    {
+        "loss": "0.2186005562543869",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1633693594742"
+    },
+    {
+        "loss": "0.2093089073896408",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1633693604426"
+    },
+    {
+        "loss": "0.19796222448349",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1633693613800"
+    },
+    {
+        "loss": "0.1869817078113556",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1633693623093"
+    },
+    {
+        "loss": "0.181174635887146",
+        "rev": "workspace",
+        "step": "7",
+        "timestamp": "1633693632492"
+    },
+    {
+        "loss": "0.17187762260437012",
+        "rev": "workspace",
+        "step": "8",
+        "timestamp": "1633693642056"
+    },
+    {
+        "loss": "0.1689673513174057",
+        "rev": "workspace",
+        "step": "9",
+        "timestamp": "1633693651404"
+    },
+    {
+        "loss": "0.1541447937488556",
+        "rev": "workspace",
+        "step": "10",
+        "timestamp": "1633700112847"
+    },
+    {
+        "loss": "0.14882372319698334",
+        "rev": "workspace",
+        "step": "11",
+        "timestamp": "1633700124048"
+    },
+    {
+        "loss": "0.14505669474601746",
+        "rev": "workspace",
+        "step": "12",
+        "timestamp": "1633700135671"
+    },
+    {
+        "loss": "0.13800473511219025",
+        "rev": "workspace",
+        "step": "13",
+        "timestamp": "1633700147696"
+    },
+    {
+        "loss": "0.13495053350925446",
+        "rev": "workspace",
+        "step": "14",
+        "timestamp": "1633700492296"
+    },
+    {
+        "loss": "0.13468807935714722",
+        "rev": "workspace",
+        "step": "15",
+        "timestamp": "1633700504255"
+    },
+    {
+        "loss": "0.13459709286689758",
+        "rev": "workspace",
+        "step": "16",
+        "timestamp": "1633700516066"
+    },
+    {
+        "loss": "0.13350768387317657",
+        "rev": "workspace",
+        "step": "17",
+        "timestamp": "1633700527588"
+    },
+    {
+        "loss": "0.13310536742210388",
+        "rev": "workspace",
+        "step": "18",
+        "timestamp": "1633700539585"
+    },
+    {
+        "loss": "0.13287785649299622",
+        "rev": "workspace",
+        "step": "19",
+        "timestamp": "1633700551179"
+    },
+    {
+        "loss": "0.13166391849517822",
+        "rev": "workspace",
+        "step": "20",
+        "timestamp": "1633700562844"
+    },
+    {
+        "loss": "0.1313904970884323",
+        "rev": "workspace",
+        "step": "21",
+        "timestamp": "1633700574380"
+    },
+    {
+        "loss": "0.13123658299446106",
+        "rev": "workspace",
+        "step": "22",
+        "timestamp": "1633700586357"
+    },
+    {
+        "loss": "0.1306035816669464",
+        "rev": "workspace",
+        "step": "23",
+        "timestamp": "1633700598010"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+            vegaEmbed('#plot_dvclive_loss_tsv', spec);
+        </script>
+    </div>
+    
+</body>
+</html>
