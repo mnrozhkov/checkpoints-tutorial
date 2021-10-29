@@ -17,12 +17,12 @@ stages:
         weight_decay: 0
     outs:
     - path: dvclive
-      md5: 725df9d809cc86ef3f857091815ea982.dir
-      size: 1520
+      md5: efa34997f24ad46557205c3a211abba0.dir
+      size: 1258
       nfiles: 2
     - path: model.pt
-      md5: 74d159c00bf4511fb12e650ab37267bd
+      md5: 129eeb88b68f7a0b896833d35b5623fd
       size: 410191
     - path: predictions.json
-      md5: 9cea0ac72e3b6fdf60491d5a09b7528c
+      md5: e807b7b680deb67f16400dfa1ded2c5d
       size: 310000
