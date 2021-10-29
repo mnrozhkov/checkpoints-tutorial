@@ -18,4 +18,3 @@ stages:
       dvclive:
         summary: true
         html: true
-        cache: false
