@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   train:
-    cmd: python train.py
+    cmd: cp confusion_matrix_source.png confusion_matrix.png && python train.py
     deps:
     - path: data/MNIST
       md5: 563f931b5aa3d66aaee35ca9ea59ff3e.dir
@@ -16,13 +16,16 @@ stages:
         seed: 473987
         weight_decay: 0
     outs:
+    - path: confusion_matrix.png
+      md5: 66ef3d9ad539de0b1d186bc758c97cd8
+      size: 25024
     - path: dvclive
-      md5: efa34997f24ad46557205c3a211abba0.dir
-      size: 1258
+      md5: ed849d7e9f41d5d09a7c7807ba12cb34.dir
+      size: 1277
       nfiles: 2
     - path: model.pt
-      md5: 129eeb88b68f7a0b896833d35b5623fd
+      md5: fa3cf92ffffab584ac615584c6fe174e
       size: 410191
     - path: predictions.json
-      md5: e807b7b680deb67f16400dfa1ded2c5d
+      md5: f1a2a4022e1c50ad1bfe396b5463cb77
       size: 310000

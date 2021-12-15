@@ -2,5 +2,5 @@
 .dvc/*
 data/
 model.pt
-predictions.json
 .dvcignore
+/dvclive
