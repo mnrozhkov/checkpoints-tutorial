@@ -20,12 +20,12 @@ stages:
       md5: 66ef3d9ad539de0b1d186bc758c97cd8
       size: 25024
     - path: dvclive
-      md5: ed849d7e9f41d5d09a7c7807ba12cb34.dir
-      size: 1277
+      md5: 2c44028f74781bb4cd62230bcc985500.dir
+      size: 647
       nfiles: 2
     - path: model.pt
-      md5: fa3cf92ffffab584ac615584c6fe174e
+      md5: b63f5664e9406f0871695cf710b87520
       size: 410191
     - path: predictions.json
-      md5: f1a2a4022e1c50ad1bfe396b5463cb77
+      md5: 471b9f9a5faad30b3c3da07b388f1bcc
       size: 310000
